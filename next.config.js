@@ -4,6 +4,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  extends: ['next', 'next/core-web-vitals'],
 };
 
 module.exports = nextConfig;
