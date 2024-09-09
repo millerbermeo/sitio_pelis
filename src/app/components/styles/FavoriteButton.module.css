@@ -1,0 +1,25 @@
+.container {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .label {
+    font-weight: 600;
+    padding-bottom: 0.25rem;
+    font-size: 0.75rem;
+  }
+  
+  .icon {
+    font-size: 80px;
+  }
+  
+  .filled {
+    color: red;
+  }
+  
+  .outline {
+    color: white;
+  }
+  

@@ -1,0 +1,110 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background-color: black;
+    padding: 0.5rem 5rem;
+  }
+  
+  .logoContainer {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+  }
+  
+  .logo {
+    width: 150px;
+    height: 50px;
+  }
+  
+  .link {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .link:hover {
+    color: gray;
+  }
+  
+  .userIcon {
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .userIcon:hover {
+    color: gray;
+  }
+  
+  @media (max-width: 1024px) {
+    .header {
+      padding: 1rem 3rem;
+    }
+  
+    .logoContainer {
+      gap: 2rem;
+    }
+  
+    .logo {
+      width: 120px;
+      height: 40px;
+    }
+  
+    .link {
+      font-size: 0.9rem;
+    }
+  
+    .userIcon {
+      font-size: 1.8rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .header {
+      padding: 1rem 2rem;
+      gap: 1rem;
+    }
+  
+    .logoContainer {
+      align-items: center;
+      gap: 1rem;
+    }
+  
+    .logo {
+      width: 100px;
+      height: 35px;
+    }
+  
+    .link {
+      font-size: 0.85rem;
+    }
+  
+    .userIcon {
+      font-size: 1.6rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .header {
+      padding: 1rem 1rem;
+    }
+  
+    .logo {
+      width: 80px;
+      height: 30px;
+    }
+  
+    .link {
+      font-size: 0.75rem;
+    }
+  
+    .userIcon {
+      font-size: 1.5rem;
+    }
+  }
+  

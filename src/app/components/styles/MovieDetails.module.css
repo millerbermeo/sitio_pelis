@@ -1,0 +1,271 @@
+.container {
+  padding: 20px;
+  background-color: #1c1c1c;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  font-family: cursive;
+}
+
+.movieInfo {
+  display: flex;
+  gap: 30px;
+}
+
+.posterImage {
+  border-radius: 10px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contentSection {
+  display: flex;
+  width: 400px;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.releaseDate,
+.overview {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.overview {
+  font-weight: 600;
+  width: 80%;
+}
+
+.ratingAndFavorite {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 80%;
+  justify-content: space-between;
+}
+
+.progress {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transform: scale(1.5);
+  margin-top: 30px;
+}
+
+.progress span {
+  color: #fff;
+  font-weight: bold;
+  font-size: 8px;
+}
+
+.rating {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #2c2c2c;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.rating span {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.heartIcon {
+  font-size: 2rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.heartIcon:hover {
+  color: #ff6666;
+}
+
+.genres {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  width: 100%;
+  justify-content: center;
+  padding-right: 200px;
+}
+
+.genre {
+  background-color: transparent;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 2px solid #e5b40f;
+}
+
+.content {
+  padding: 40px 50px;
+  color: #e5b40f;
+  background-color: #0706068e;
+}
+
+.trailerButton {
+  margin-top: 10px;
+  width: 90%;
+  background-color: #f5c518;
+  color: black;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.trailerButton:hover {
+  background-color: #e5b40f;
+}
+
+.recommendations {
+  margin: auto;
+  margin-top: 40px;
+  width: 80%;
+  margin-bottom: 100px;
+}
+
+.recommendations h2 {
+  color: #fff;
+  margin: 10px 0;
+}
+
+.recommendationList {
+  display: flex;
+  gap: 30px;
+}
+
+.recommendationItem {
+  text-align: center;
+  color: #cccccc;
+  width: 200px;
+  overflow: hidden;
+  background-color: #2c2c2c;
+}
+
+.recommendationPoster {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+@media (max-width: 1024px) {
+  .content {
+    padding: 30px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .movieInfo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contentSection {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .overview {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .posterImage {
+    width: 250px;
+    height: 350px;
+  }
+
+  .trailerButton {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .overview {
+    width: 90%;
+    font-size: 0.85rem;
+  }
+
+  .trailerButton {
+    width: 100%;
+  }
+
+  .genres {
+    padding-right: 0;
+  }
+
+  .recommendationList {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .recommendationItem {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+  .movieInfo {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+ .genres {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+ }
+  .posterImage {
+    width: 200px;
+    height: 300px;
+    margin: auto;
+  }
+
+  .trailerButton {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .overview {
+    font-size: 0.75rem;
+  }
+
+  .recommendationItem {
+    width: calc(100% - 20px);
+  }
+}
